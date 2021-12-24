@@ -1,0 +1,96 @@
+.nav-list {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+li {
+    float: left;
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    margin-left: 0% !important;
+    margin-right: 20%;
+    justify-content: space-between;
+    border-bottom: 5px solid rgb(238, 238, 238);
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex:1
+}
+
+.right-section {
+flex-flow: 1;  
+/* width: 40%;   */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.user-btn {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .nav {
+        display: none;
+    }
+    .user-btn {
+        display: none;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+    /* Styles */
+    .nav {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .user-btn {
+        display: none;
+    }
+}

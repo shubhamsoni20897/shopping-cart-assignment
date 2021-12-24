@@ -1,0 +1,161 @@
+.partition {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu {
+    background-color: rgb(238, 238, 238);
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.content {
+    flex: 3;
+    height: 100vh;
+    flex-flow: row wrap;
+}
+
+.menu-list {
+    padding: 5px;
+    border-bottom: 1px solid #E2E2E2;
+    font-size: small;
+    width: 100%;
+    margin: 0px;
+    cursor: pointer;
+
+}
+
+.product-card {
+    margin: 10px;
+    /* padding: 4px; */
+    padding-right: 10px;
+    /* display: flex;
+    flex-flow: row wrap; */
+    flex-basis: 150px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-bottom: 2px dotted rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-right-width: 60%;
+}
+
+.title {
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.product-image img {
+    max-width: 150px;
+}
+
+.product-description {
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    font-size: x-small;
+}
+
+.card-footer {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.price {
+    font-size: smaller;
+    font-weight: 700;
+}
+
+.buy-btn {
+    margin: 5px;
+    color: white;
+    font-size: x-small;
+    padding: 5px;
+    background-color: #BF2956;
+}
+
+.category-title {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.no-product {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.drop-down-menu-close{
+    display: none;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+main {
+    margin-left: 2% !important;
+    margin-right: 2% !important
+}
+.product-card {
+    margin: 10px;
+    /* padding: 4px; */
+    padding-right: 10px;
+    /* display: flex;
+    flex-flow: row wrap; */
+    flex-basis: auto!important;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-bottom: 2px dotted rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-right-width: 60%;
+}
+    .content {
+
+     
+    }
+    .menu {
+        display: none
+    }
+
+    .card-content {
+        display: flex;
+    }
+    .card-body{
+        margin:10px
+    }
+    .drop-down-menu-close{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        height: 15px;
+        background-color:#BF2956 ;
+        justify-content: space-between;
+    }
+    .drop-down-menu-open{
+        height: auto; 
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        background-color:#BF2956 ;
+        justify-content: space-between;
+        /* transform: translate(20);
+        transition: top 0.2s ease-in; */
+
+    }
+ 
+}
+
+/* Smartphones (portrait) ----------- */
